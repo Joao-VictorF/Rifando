@@ -1,24 +1,22 @@
-# rifando
+# Rifando - Projeto final da cadeira de desenvolvimento web.
 
-## Project setup
+## Setup p/ rodar o projeto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Modo de desenvolvimento com hot-reload
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Build para produção
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Lints e fixes
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
