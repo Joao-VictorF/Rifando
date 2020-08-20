@@ -74,9 +74,7 @@ export default {
       })
       .then((res) => {
         this.tickets = res.data;
-        setTimeout(() => {
-          this.isLoading = false;
-        }, 1500)
+        this.isLoading = false;
       })
       .catch((err) => {
         console.log(err);
@@ -93,7 +91,7 @@ export default {
         return this.tickets;
       }
       return this.tickets.filter(function(item) {
-        return item.title.toLowerCase().indexOf(self.searchTicket.toLowerCase()) >= 0;
+        return item.rafle.toLowerCase().indexOf(self.searchTicket.toLowerCase()) >= 0;
       });
     }
   },

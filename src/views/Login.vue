@@ -113,7 +113,6 @@ export default {
 
         api.post('/auth/sign_in', this.user)
           .then((res) => {
-            console.log(res.headers);
             localStorage.setItem('uid', res.headers.uid);
             localStorage.setItem('client', res.headers.client);
             localStorage.setItem('token', res.headers['access-token']);

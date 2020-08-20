@@ -377,9 +377,7 @@ export default {
           res.data[i].show = false;
         }
         this.rifas = res.data;
-        setTimeout(() => {
-          this.isLoading = false;
-        }, 1500)
+        this.isLoading = false;
       })
       .catch((err) => {
         console.log(err);
@@ -471,7 +469,7 @@ export default {
         return this.rifas;
       }
       return this.rifas.filter(function(item) {
-        return item.title.toLowerCase().indexOf(self.searchRifa.toLowerCase()) >= 0;
+        return item.name.toLowerCase().indexOf(self.searchRifa.toLowerCase()) >= 0;
       });
     }
   },
