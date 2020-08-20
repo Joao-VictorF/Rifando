@@ -1,3 +1,7 @@
-// import axios from 'axios';
+import axios from 'axios';
 
-// const api = axios
+const api = axios.create({
+  baseURL: 'https://rifando-backend.herokuapp.com/',
+});
+
+export default api;

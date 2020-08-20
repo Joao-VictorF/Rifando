@@ -43,4 +43,7 @@
     z-index: 9999;
   }
 
+  .text-error {
+    color: firebrick;
+  }
 </style>
